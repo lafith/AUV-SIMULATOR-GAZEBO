@@ -1,10 +1,10 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='tiburon_bot_new'>
-    <link name='link_0'>
+  <model name='bot_demo'>
+    <link name='hull'>
       <pose frame=''>0.004745 0.002289 0.10857 0 -0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>9.55</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -18,26 +18,23 @@
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.07 0.07 0.07</size>
+            <size>0.5 0.5 0.5</size>
           </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
-          </script>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
           <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::hull::visual_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -48,7 +45,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.07 0.07 0.07</size>
+            <size>0.5 0.5 0.5</size>
           </box>
         </geometry>
         <surface>
@@ -98,10 +95,10 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1'>
-      <pose frame=''>0.022004 0.037619 0.10857 0 -0 0</pose>
+    <link name='thruster_1'>
+      <pose frame=''>-0.132492 0.251268 0.10857 0 -0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>0.39</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -115,26 +112,23 @@
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>1 1 1 1</emissive>
           <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>ModelPreview_1::thruster_1::visual_MATERIAL_</name>
+            <uri>__default__</uri>
           </script>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -145,7 +139,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <surface>
@@ -195,10 +189,10 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1_clone'>
-      <pose frame=''>-0.002381 0.037619 0.10857 0 -0 0</pose>
+    <link name='thruster_2'>
+      <pose frame=''>-0.134788 -0.247148 0.10857 0 -0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>0.39</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -212,26 +206,23 @@
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>1 1 1 1</emissive>
           <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>ModelPreview_1::thruster_2::visual_MATERIAL_</name>
+            <uri>__default__</uri>
           </script>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -242,7 +233,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <surface>
@@ -292,10 +283,10 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1_clone_0'>
-      <pose frame=''>-0.021996 0.037619 0.10857 0 -0 0</pose>
+    <link name='thruster_3'>
+      <pose frame=''>0.254286 0.002289 0.10857 0 -0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>0.39</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -309,26 +300,23 @@
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>1 1 1 1</emissive>
           <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>ModelPreview_1::thruster_3::visual_MATERIAL_</name>
+            <uri>__default__</uri>
           </script>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -339,7 +327,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <surface>
@@ -389,10 +377,10 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1_clone_1'>
-      <pose frame=''>0.022004 -0.03481 0.10857 0 -0 0</pose>
+    <link name='thruster_4'>
+      <pose frame=''>-0.002381 0.252579 0.10857 0 -0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>0.39</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -406,26 +394,23 @@
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>1 1 1 1</emissive>
           <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>ModelPreview_1::thruster_4::visual_MATERIAL_</name>
+            <uri>__default__</uri>
           </script>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -436,7 +421,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <surface>
@@ -486,10 +471,10 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1_clone_1_clone'>
-      <pose frame=''>-0.002381 -0.03481 0.10857 0 -0 0</pose>
+    <link name='thruster_5'>
+      <pose frame=''>-0.002381 -0.247148 0.10857 0 -0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>0.39</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -503,26 +488,23 @@
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>1 1 1 1</emissive>
           <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>ModelPreview_1::thruster_5::visual_MATERIAL_</name>
+            <uri>__default__</uri>
           </script>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -533,7 +515,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <surface>
@@ -583,10 +565,10 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1_clone_1_clone_0'>
-      <pose frame=''>-0.021996 -0.03481 0.10857 0 -0 0</pose>
+    <link name='thruster_6'>
+      <pose frame=''>0.004745 0.002289 -0.140467 0 -0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>0.39</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -600,26 +582,23 @@
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>1 1 1 1</emissive>
           <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>ModelPreview_1::thruster_6::visual_MATERIAL_</name>
+            <uri>__default__</uri>
           </script>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -630,7 +609,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <surface>
@@ -680,10 +659,10 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1_clone_2'>
-      <pose frame=''>0.004745 0.002289 0.072 0 -0 0</pose>
+    <link name='thruster_p4'>
+      <pose frame=''>0.136164 0.252586 0.10857 0 -0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>0.39</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -697,26 +676,23 @@
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>1 1 1 1</emissive>
           <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>ModelPreview_1::thruster_p4::visual_MATERIAL_</name>
+            <uri>__default__</uri>
           </script>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -727,7 +703,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <surface>
@@ -777,10 +753,10 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1_clone_3'>
-      <pose frame=''>0.039 0.002289 0.10857 0 -0 0</pose>
+    <link name='thruster_p5'>
+      <pose frame=''>0.136043 -0.248527 0.10857 0 -0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>0.39</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -794,26 +770,23 @@
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>1 1 1 1</emissive>
           <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>ModelPreview_1::thruster_p5::visual_MATERIAL_</name>
+            <uri>__default__</uri>
           </script>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -824,7 +797,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.008 0.008 0.008</size>
+            <size>0.077 0.077 0.077</size>
           </box>
         </geometry>
         <surface>
@@ -874,9 +847,9 @@
         </surface>
       </collision>
     </link>
-    <joint name='link_0_JOINT_0' type='fixed'>
-      <parent>link_0</parent>
-      <child>link_1_clone_2</child>
+    <joint name='hull_JOINT_0' type='fixed'>
+      <parent>hull</parent>
+      <child>thruster_1</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
@@ -891,9 +864,9 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_0_JOINT_1' type='fixed'>
-      <parent>link_0</parent>
-      <child>link_1_clone_3</child>
+    <joint name='hull_JOINT_1' type='fixed'>
+      <parent>hull</parent>
+      <child>thruster_2</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
@@ -908,9 +881,9 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_0_JOINT_4' type='fixed'>
-      <parent>link_0</parent>
-      <child>link_1_clone_0</child>
+    <joint name='hull_JOINT_2' type='fixed'>
+      <parent>hull</parent>
+      <child>thruster_3</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
@@ -925,9 +898,9 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_0_JOINT_5' type='fixed'>
-      <parent>link_0</parent>
-      <child>link_1</child>
+    <joint name='hull_JOINT_3' type='fixed'>
+      <parent>hull</parent>
+      <child>thruster_4</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
@@ -942,9 +915,9 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_0_JOINT_6' type='fixed'>
-      <parent>link_0</parent>
-      <child>link_1_clone</child>
+    <joint name='hull_JOINT_4' type='fixed'>
+      <parent>hull</parent>
+      <child>thruster_4</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
@@ -959,9 +932,9 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_0_JOINT_7' type='fixed'>
-      <parent>link_0</parent>
-      <child>link_1_clone_1</child>
+    <joint name='hull_JOINT_5' type='fixed'>
+      <parent>hull</parent>
+      <child>thruster_5</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
@@ -976,9 +949,9 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_0_JOINT_8' type='fixed'>
-      <parent>link_0</parent>
-      <child>link_1_clone_1_clone</child>
+    <joint name='hull_JOINT_6' type='fixed'>
+      <parent>hull</parent>
+      <child>thruster_6</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
@@ -993,26 +966,27 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_0_JOINT_9' type='revolute'>
-      <parent>link_0</parent>
-      <child>link_1_clone_1_clone_0</child>
+    <joint name='hull_JOINT_7' type='fixed'>
+      <parent>hull</parent>
+      <child>thruster_p4</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <use_parent_model_frame>0</use_parent_model_frame>
-        <limit>
-          <lower>-1.79769e+308</lower>
-          <upper>1.79769e+308</upper>
-          <effort>-1</effort>
-          <velocity>-1</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
-        </dynamics>
-      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='hull_JOINT_8' type='fixed'>
+      <parent>hull</parent>
+      <child>thruster_p5</child>
+      <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
           <limit>
