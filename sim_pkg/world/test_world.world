@@ -12,6 +12,6 @@
     <include>
       <uri>model://auv_demo</uri>
     </include>
-
+    <plugin name="bot_plugin" filename="libbot_plugin.so"/>
   </world>
 </sdf>
