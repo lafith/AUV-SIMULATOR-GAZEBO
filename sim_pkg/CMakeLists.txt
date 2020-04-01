@@ -34,3 +34,9 @@ catkin_package(
 #target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 add_library(bot_plugin src/bot_plugin.cpp)
 target_link_libraries(bot_plugin ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
+add_library(freebuoyancy_gazebo SHARED
+    src/freebuoyancy.cpp
+    src/freebuoyancy.h
+)
+target_link_libraries(freebuoyancy_gazebo ${GAZEBO_LIBRARIES})

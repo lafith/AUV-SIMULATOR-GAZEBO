@@ -5,6 +5,7 @@ namespace gazebo
 {
 class WorldPluginTutorial : public WorldPlugin
 {
+  private: physics::WorldPtr world;
 public:
   WorldPluginTutorial() : WorldPlugin()
   {
@@ -12,6 +13,7 @@ public:
 
   void Load(physics::WorldPtr _world, sdf::ElementPtr _sdf)
   {
+    this->world = _world;
     // Make sure the ROS node for Gazebo has already been initialized
     if (!ros::isInitialized())
     {

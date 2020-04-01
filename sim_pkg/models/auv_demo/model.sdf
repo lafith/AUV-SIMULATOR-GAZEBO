@@ -286,7 +286,7 @@
     <link name='thruster_3'>
       <pose frame=''>0.254286 0.002289 0.10857 0 -0 0</pose>
       <inertial>
-        <mass>0.39</mass>
+        <mass>0</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -1002,5 +1002,21 @@
     </joint>
     <static>0</static>
     <allow_auto_disable>1</allow_auto_disable>
+
+<plugin name="freebuoyancy_gazebo" filename="libfreebuoyancy_gazebo.so">
+  <descriptionParam>robot_description</descriptionParam>
+  <fluidTopic>current</fluidTopic>
+  <alwaysOn>true</alwaysOn>
+  <surface>0 0 0</surface>
+  <updateRate>.001</updateRate>
+
+  <link name='hull'>
+    <buoyancy>
+      <compensation>2</compensation>
+      <origin xyz= "0 0 0"/>
+    </buoyancy>
+  </link>
+</plugin>
+
   </model>
 </sdf>
