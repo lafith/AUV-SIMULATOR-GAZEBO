@@ -11,11 +11,9 @@
       <pose>0 0 -5 0 0 0</pose>
     </include>
 
-    <include>
+  <include>
       <uri>model://auv_demo</uri>
-      <pose>0 0 3 0 0 0</pose>
+      <!--<pose>0 0 3 0 0 0</pose>-->
     </include>
-    <plugin name="bot_plugin" filename="libbot_plugin.so"/>
-
     </world>
 </sdf>
