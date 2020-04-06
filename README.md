@@ -4,7 +4,7 @@ This simulator, made by using Gazebo, is used to test the control algorithm, sim
 ## Prerequisites
 - [Ubuntu 18.04](https://ubuntu.com/download/desktop/thank-you?version=18.04.4&architecture=amd64#download-content).
 - [ROS Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu).
--Gazebo9
+- Gazebo9
 
 ## NOTE
 This repository is still under development.
@@ -26,7 +26,7 @@ This repository is still under development.
 -**thruster_plugin** receive PWM values from **/thruster_Speeds**. These are changed into thrust values using a [transformation function](https://github.com/aolgu003/RoboSub/blob/eda2261462f0aa5f5e1dbca1103f99c44f118f1f/Sea_Goat_2016/rov_sim/T100_thruster_dynamics.m).
 - Images are continously sent to **/front_camera/image_rect_color** & **/bottom_camera/image_rect_color** using the gazebo [camera plugin](http://gazebosim.org/tutorials?tut=ros_gzplugins).
 
-##TODO
+## TODO
 - [ ] tweak the buoyancy plugin parameters and maybe mass of the auv, if needed, inorder to get better buoyancy effect.
 - [ ] Simulate underwater environment effects like sun flares, blurry appearance, random image noise etc.
 - [ ] Attempt curve fitting using [T100 thruster data (PWM vs Kgf)](https://github.com/aolgu003/RoboSub/blob/eda2261462f0aa5f5e1dbca1103f99c44f118f1f/Sea_Goat_2016/rov_sim/T100_motor_data.xlsx) to get better transform function.
