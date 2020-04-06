@@ -13,12 +13,12 @@ This repository is still under development.
 1. Set up ROS Melodic. Gazebo9 will be downloaded along with ROS.
 2. ```mkdir -p ~/catkin_ws/src && cd catkin_ws && catkin build```
 3. ```cd src```
-3. Build [hammerhead](https://gitlab.com/tiburonnitr/hammerhead) package of Team Tiburon.
-4. now clone this repository. ```git clone https://gitlab.com/makaara/makara_simulator.git```
-5. ```sudo gedit ./bashrc``` and add following line at the end: ```export GAZEBO_MODEL_PATH=~/catkin_ws/src/sim_pkg/models/```
-6. Restart the terminal and ```cd ~/catkin_ws && catkin build```
-7.```source devel/setup.bash```
-8. ```roslaunch sim_pkg sauvc_world.launch```
+4. Build [hammerhead](https://gitlab.com/tiburonnitr/hammerhead) package of Team Tiburon.
+5. now clone this repository. ```git clone https://gitlab.com/makaara/makara_simulator.git```
+6. ```sudo gedit ./bashrc``` and add following line at the end: ```export GAZEBO_MODEL_PATH=~/catkin_ws/src/sim_pkg/models/```
+7. Restart the terminal and ```cd ~/catkin_ws && catkin build```
+8. ```source devel/setup.bash```
+9. ```roslaunch sim_pkg sauvc_world.launch```
 
 ## IMPORTANT INFO:
 - Currently buoyancy is simulated using [usv_gazebo_plugins](https://bitbucket.org/osrf/vrx/src/default/).
